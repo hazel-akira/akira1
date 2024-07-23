@@ -1,0 +1,318 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* Default styles */
+body {
+    font-size: 16px;
+}
+
+.container {
+    width: 100%; 
+    margin:auto;
+}
+h3{
+    color: #a5c8ee;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    /* Styles for screens smaller than 768px (e.g., smartphones) */
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for screens between 769px and 1024px (e.g., tablets) */
+    .container {
+        width: 80%; /* Adjust as needed */
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Styles for screens larger than 1024px (e.g., desktops) */
+    .container {
+        width: 1200px; /* Adjust as needed */
+    }
+}
+
+.bannerArea{
+    background-image: url(images/word-events-written-multicolored-bright-wooden-cubes-light-blue-background-201535177.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%; 
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+}
+
+.events{
+    display: flex;
+    background-color: #333;
+}
+.previous-events{
+    flex: 50%;
+    flex-wrap: wrap;
+    display: block;
+    background-color: #afacac;
+    border-radius: 50px;
+    width:100%;
+}
+.upcoming{
+     display: block;
+     background-color: #c9c3c6;
+     flex: 50%;
+     flex-wrap: wrap;
+     border-radius: 50px;
+     width: 700px;
+}
+h1{
+   text-align: center;
+   text-transform: capitalize;
+   font-size: 40px;
+   font-weight: bold;
+   text-decoration: solid;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: #0b4f77;     
+    }
+    .community-section{
+        margin: 20px;
+        padding: 30px;
+        background-color: rgba(189, 34, 47, 0.938);
+        border-radius: 40px;
+        width: 400px;
+        height: 600px;
+    }
+    .comm{
+        border-radius: 30px;
+        width: 300px;
+        height: 300px;
+
+    }
+    .comm:hover{
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .fall-section{
+        margin: 20px;
+        padding:30px;
+        background-color: rgb(11, 211, 211);
+        border-radius: 40px;
+        width: 400px;
+        height: 600px;
+    }
+    .wor{
+        border-radius: 30px;
+        width: 500px;
+        height: 300px;
+    }
+    .worship-section{
+        margin: 20px;
+        padding:30px;
+        background-color: rgb(109, 19, 109);
+        border-radius: 40px;
+        width: 400px;
+        height: 600px;
+    }
+    .youth-section{
+        margin: 20px;
+        padding: 30px;
+        background-color: rgb(128, 141, 6);
+        border-radius: 40px;
+        width: 400px;
+        height: 600px;
+    }
+
+    .vbs-section{
+        margin: 20px;
+        padding:30px;
+        background-color: rgba(207, 10, 158, 0.842);
+        border-radius: 40px;
+        width: 400px;
+        height: 600px;
+    }
+   
+    .bible-section{
+        margin: 20px;
+        padding: 30px;
+        background-color: rgb(70, 163, 47);
+        border-radius: 40px;
+        width: 400px;
+        height: 600px;
+    }
+
+
+
+
+    .women-section{
+        margin: 20px;
+        padding: 30px;
+        background-color: rgb(9, 91, 185);
+        border-radius: 40px;
+        width: 400px;
+        height: 600px;
+    }
+
+
+
+    .men-section{
+        margin: 20px;
+        padding: 30px;
+        background-color: rgba(16, 70, 3, 0.863);
+        border-radius: 40px;
+        width: 400px;
+        height: 600px;
+    }
+
+    .prayer-section{
+        margin: 20px;
+        padding: 30px;
+        background-color: rgb(15, 156, 145);
+        border-radius: 40px;
+        width: 400px;
+        height: 600px;
+    }
+.content{
+    text-align: end;
+  }
+  .socials{
+    color: #0b4f77;
+    align-items: right;
+    width: 100%;
+    max-height: 100px;
+   font-size: 22px;
+  }
+  .socials ul li{
+    width: 200px;
+  }
+  .nav {
+    justify-content: space-between;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+}
+.socio-logo{
+
+    display:flex;
+    margin: 15px;
+    padding-top: 10px;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    justify-content: space-between; /* Align items to the start and end of the container */
+    align-items: center; /* Center items vertically */
+    
+  }
+.logo img {
+    max-height: 100px; 
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 30px; 
+    border-radius: 70px;
+    
+   
+}
+.navbar {
+    margin-top: 10px;
+    background-color: #3a657e; /* background color */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: #fff; /* Example color */
+    margin: 6px 0;
+}
+
+
+/* Media query to hide navigation on mobile devices */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the navigation menu by default on small screens */
+    }
+
+    .nav-links.active {
+        display: block; /* Show the navigation menu when active */
+    }
+}
+
+
+.nav-links {
+  align-items: center;
+  text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    margin-right: 0;
+    height: 5vh;
+}
+
+.nav-links li {
+    font-size: 20px;
+    display: inline;
+    margin: 40px;
+    width: 100px;
+   text-align: center;
+   text-transform: capitalize;
+   height: 50vh;
+
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Remove margin from the last nav link */
+}
+
+.nav-links li a {
+    color: #0b1863; 
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+.nav-links li a:hover {
+   
+    color: #b7c9c5;
+}
+
+footer{
+    font-size: 25px;
+    text-align: center;
+    height: 10vh;
+    color: #e5dff7;
+    background-color: #1b0c0c;
+  }
+
+  .containerb {
+    background-color: #e1e6ecbd;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,316 @@
+
+::root{
+  --primaryColor:#FFFFFF;
+  --secondaryColor:#7FDBFF;
+  --lightColor:#FFD700;
+  --darkColor:#0074D9;
+}
+*{
+  margin: 0;
+  padding: 0;
+
+}
+.socials{
+color: #0b4f77;
+align-items: right;
+width: 100%;
+max-height: 100px;
+font-size: 22px;
+}
+.socials ul li{
+width: 200px;
+}
+/* Default styles */
+.navbar {
+background-color: #027e63; 
+width: 100%;
+height: 20vh;
+display: inline-flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.menu-toggle {
+cursor: pointer;
+}
+
+.line {
+width: 30px;
+height: 2px;
+background-color: #fff; 
+margin: 6px 0;
+}
+
+
+
+.socio-logo{
+
+display:flex;
+margin: 15px;
+padding-top: 10px;
+max-width: 100%;
+height: auto;
+width: 100%;
+justify-content: space-between; /* Align items to the start and end of the container */
+align-items: center; /* Center items vertically */
+
+}
+.logo img {
+margin: 2px;
+padding: 10px;
+max-height: 100px; /* Adjust the maximum height of the logo as needed */
+width: auto; /* Maintain aspect ratio */
+margin-right: 30px; 
+border-radius: 20px;
+
+
+}
+.menu-toggle {
+cursor: pointer;
+}
+
+
+
+
+.nav-links li a {
+color: #fff; /* Example text color */
+text-decoration: none;
+}
+
+.nav-links li a:hover {
+text-decoration: underline;
+}
+
+/* Media query to hide navigation on mobile devices */
+@media only screen and (max-width: 768px) {
+.nav-links {
+    display: none; /* Hide the navigation menu by default on small screens */
+}
+
+.nav-links.active {
+    display: block; /* Show the navigation menu when active */
+}
+}
+
+.nav-links {
+margin: 0;
+padding: 0;
+align-items: center;
+list-style: none;
+cursor: pointer;
+margin-right: 0;
+height: 7vh;
+color: whitesmoke;
+}
+
+.nav-links li {
+margin-right: 20px;
+list-style: none;
+font-size: 20px;
+display: inline;
+margin: 40px;
+text-align: center;
+text-transform: capitalize;
+height: 50vh;
+
+}
+
+.nav-links li:last-child {
+margin-right: 0; 
+}
+
+.nav-links li a {
+color: #fff; /* Example text color */
+text-decoration: none;
+}
+
+.nav-links li a:hover {
+
+color: #38b398;
+}
+
+/* Media query to hide navigation on mobile devices */
+@media only screen and (max-width: 768px) {
+.nav-links {
+    display: none; /* Hide the navigation menu by default on small screens */
+}
+
+.nav-links.active {
+    display: block; /* Show the navigation menu when active */
+}
+}
+
+
+
+.bannerArea{
+  background-image: url(images/about.avif);
+  background-position: center;
+  background-size: cover;
+  width: 100%; 
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.contentba{
+  
+  color: #02034be3;
+  font-size: 55px;
+  font-weight: bold;
+  
+ margin: 20% 15rem;
+  
+}
+
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+}
+
+.image-container, .content-container {
+  flex: 1;
+  padding: 1rem;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.content-container {
+  max-width: 600px;
+}
+
+.content-container h2 {
+  color: #333;
+}
+
+.content-container p {
+  line-height: 1.6;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+      flex-direction: column;
+  }
+}
+
+
+
+  .about-section .about-title {
+    text-align: center;
+    font-size: 35px;
+    color: #027e63;
+    text-transform: uppercase;
+    }
+    .about-section .about-title span{
+      color: #031f38;
+       
+    }
+    .about-image{
+      border-radius: 50px;
+    }
+    
+    .about-image img {
+      flex: 1;
+      height: 50vh;
+      margin: 15px;
+      padding: 20px;
+      max-width: 100%;
+      height: auto;
+      
+    }
+    
+    .about-content {
+      display: flex;
+      margin: 10px; 
+    }
+    #about-section h1{
+      font-size: 35px;
+      text-transform: capitalize;
+      text-align: center;
+      color: #0b1863;
+
+    }
+    #about-section .about-title {
+      text-align: center;
+       font-size: 40px;
+       color: #027e63;
+      text-transform: uppercase;
+      font-weight: bolder;
+      }
+      #about-section .about-title span{
+        color: #031f38;
+         
+      }
+     #about-section .vision{
+      flex: -1;
+  
+    height: 23vh;
+    padding: 10px;
+    }
+
+    .vision p{
+      text-align: center;
+      font-size: 28px;
+    }
+     
+    .mission p{
+    text-align: center;
+    font-size: 28px;
+    }
+    #about-section .values p{
+      text-align: center;
+      font-size: 28px;
+      }
+     .mission{
+      
+       text-align: center;
+      padding: 10px;
+    }
+     .values {
+      font-size: 28px;
+      padding: 10px;
+      text-align: center;
+    }
+    .values h5{
+    color: rgb(27, 14, 14);
+    }
+
+    .paragraph{
+   padding: 20px;
+   font-weight: bold;
+   background-color: #9aaaccf1;
+   
+    
+    }
+    .paragraph h2{
+      font-size: 40px;
+      color: #027e63;
+     font-family:cursive; 
+    margin: 10px;
+    }
+
+  h5{
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: #b7c9c5;
+    font-size: 28px;
+    
+  }
+  
+    footer{
+      font-size: 25px;
+      text-align: center;
+      height: 10vh;
+      color: #e5dff7;
+      background-color: #1b0c0c;
+    }
